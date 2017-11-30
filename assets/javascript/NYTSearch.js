@@ -4,7 +4,7 @@ $( document ).ready( function (){
 	url += '?' + $.param({
 	  'api-key': "03868292f7fd411c9b96916dffdd013f"
 	});
-	//var searchTerm = ;
+	//var searchTerm = $();
 	//var recordNumber = ;
 	//var startYear = ;
 	//var endYear = ;
@@ -19,10 +19,9 @@ $( document ).ready( function (){
 	  console.log(result);
 	}).fail(function(err) {
 	  throw err;
-	});=
+	});
+	
 
-
-	console.log(url)
 
 
 
