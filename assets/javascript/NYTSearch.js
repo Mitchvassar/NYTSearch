@@ -1,16 +1,7 @@
-$( document ).ready( function (){
-
 	var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 	url += '?' + $.param({
 	  'api-key': "03868292f7fd411c9b96916dffdd013f"
-	});
-	//var searchTerm = $();
-	//var recordNumber = ;
-	//var startYear = ;
-	//var endYear = ;
-	//var searchButton = ;
-	//var clearResults = ;
-
+	  });
 
 	$.ajax({
 	  url: url,
@@ -21,46 +12,37 @@ $( document ).ready( function (){
 	  throw err;
 	});
 	
+	var searchTerm = $("#searchTerm").val()
+	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$(document).ready(function(){
+	$("#searchTerm").on("click", function(){
+		console.log(searchTerm)
+		});
 
 
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
